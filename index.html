@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The IceCream Parlour</title>
+    <style>
+          html,body {
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
+body{
+    /* background-color: rgb(255,127,39); */
+    animation:pageload 1s;
+    -webkit-animation:pageload 1s;
+   
+}
+@keyframes pageload {
+    from{
+        opacity: 0;
+        transform: rotate(50deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+    to{
+        opacity: 1;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    
+}
+        #box1{
+            width: 700px;
+            height: 300px;
+            display: flex;
+           margin-left: 50%;
+            background-color:rgb(153,217,234);
+/* box-shadow:  5px 5px 5px rgb(153,217,234); */
+            position:relative;
+            z-index: 0;
+            margin-top: -240px;
+            
+        }
+        #box2{
+            width: 500px;
+            height: 300px;
+            display: flex;
+            margin-left: 60%;
+            margin-top: -120px;
+            background-color:rgb(255,169,128);
+            position: relative;
+            z-index: 1;
+        }
+        #box3{
+            display: flex;
+            background-image: url(images/ice5_prev_ui.png);
+
+            border:30px solid rgb(255,128,128);
+            box-shadow: 3px 3px 3px rgb(255,128,128) ;
+            width: 400px;
+            height: 300px;
+            margin-top: -210px;
+            margin-left: 20px;
+            
+            position: relative;
+            
+            z-index: 10;
+
+
+        }
+        
+            
+        
+        .image1{
+            display: flex;
+        margin-left: 105px;
+            width: 300px;
+            
+        }
+        .image2{
+            width: 350px;
+            height: 200px;
+            /* height: 400px; */
+        }
+        .head{
+            font-family: Segoe UI Black;
+            font-size: 60px;
+            position: relative;
+            z-index: 14;
+           margin-left: 250px;
+           margin-top: -8px;
+        }
+        .btn{
+            color: white;
+            background-color: black;
+            font-size: 19px;
+            padding: 10px;
+            width: 130px;
+            font-family: Segoe UI;
+            border: none;
+            margin-left:250px;
+            margin-top: -20px;
+            box-shadow: 2px 0 2px black;
+            transition: transform 1s,background-color 1s;
+
+
+        }
+        .anch{
+            color: white;
+            text-decoration: none;
+        }
+        .btn:hover{
+            transform: ScaleX(1.1);
+            background-color: rgb(255,128,128);
+            box-shadow: 2px 0 2px rgb(153,217,234); 
+            color: rgb(153,217,234);;
+        }
+        
+       
+        
+
+    </style>
+</head>
+<body>
+    <h1 class="head"> THE ICE CREAM<br> CORNER</h1>
+    <button class="btn"><a class="anch" href="second.html">Wanna Taste</a> </button>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2">
+       
+        <img src="images/ice1_prev_ui.png" alt="" class="image1">
+    </div>
+    <div class="box" id="box3">
+        
+       
+    </div>
+    
+</body>
+</html>
